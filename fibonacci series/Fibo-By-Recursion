@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Main {
+    static	int count =2;
+	public static void fibonacci(int a,int b) {
+	    if(count<20) {
+            int temp=a+b;
+			System.out.println(temp);
+			b=a;
+			a=temp;
+			count++;
+			fibonacci(a,b);
+		  } else {
+			return;
+		}
+	}
+	public static void main(String[] args) {
+		System.out.println("The Fibonacci series are:");
+		System.out.println(0);
+		System.out.println(1);
+		fibonacci(1,0);
+	}
+}
